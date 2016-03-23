@@ -12,12 +12,6 @@ News::News(QWidget* parent, QSettings* p) : QWidget(parent), p(p)
     this->setStyleSheet("QListWidget { background-color: " + p->value("Primary/SecondaryBase").toString() + ";} "
                         "QListWidget { color: " + p->value("Primary/LightText").toString() + "; }"
                         "QLabel { color: " + p->value("Primary/LightText").toString() + "; }"
-                        "QPushButton {"
-                        "color: " + p->value("Primary/LightText").toString() + "; "
-                        "background-color: " + p->value("Primary/DarkElement").toString() + "; "
-                        "border: none; margin: 0px; padding: 0px;} "
-                        "QPushButton:hover {"
-                        "background-color: " + p->value("Primary/InactiveSelection").toString() + ";} "
                         "color: " + p->value("Primary/LightText").toString() + ";");
     QFont buttonFont("SourceSansPro", 9);
 
