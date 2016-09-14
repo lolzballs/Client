@@ -55,5 +55,6 @@ int main(int argc, char* argv[])
     }
 
     application->exec();
+    delete application;
     return 0;
 }
